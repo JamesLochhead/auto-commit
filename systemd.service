@@ -1,0 +1,10 @@
+[Unit]
+Description=DAEMON_NAME
+
+[Service]
+Restart=on-failure
+RestartSec=5s
+ExecStart=DAEMON_PATH
+
+[Install]
+WantedBy=multi-user.target
